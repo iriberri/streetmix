@@ -13,10 +13,7 @@ install:
 
 
 script:
-  - cat package-lock.json
-  - rm package-lock.json
-  - npm install
-  - cat package-lock.json
+  - npm ci --verbose
 
 notifications:
   email: false
