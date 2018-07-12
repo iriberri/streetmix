@@ -25,9 +25,7 @@ before_install:
 
 # We have `npm ci` errors, so force it to use `npm install`
 install:
-  - npm ls
   - npm ci
-  - npm install
 
 before_script:
   # Artificial wait before connecting to MongoDB
