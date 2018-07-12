@@ -11,9 +11,14 @@ sudo: required
 install:
   - true
 
+before_install:
+  # Install dependencies for node `canvas` package
+  # https://github.com/Automattic/node-canvas#compiling
+  - sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+
 
 script:
-  - npm ci
+  - npm ci --verbose
 
 notifications:
   email: false
