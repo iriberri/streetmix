@@ -21,6 +21,7 @@ script:
   - ls node_modules/
   - npm ci --verbose
   - ls node_modules/
+  
 
 notifications:
   email: false
